@@ -71,3 +71,17 @@
     </Music_Collection>
 
 </session>
+
+<!-- Session 2 -->
+
+<!-- eg:8 -->
+
+<S:Student xmlns:S="https://www.google.com/"> 
+<S:First>Arbaz</S:First>
+<S:Second>ALI</S:Second>
+<S:Third>ShahBaz</S:Third>
+</S:Student> 
+
+<!-- eg:9 -->
+<root xmlns:h="https://www.w3schools.com/"
+      xmlns:f="https://airforshare.com/">
