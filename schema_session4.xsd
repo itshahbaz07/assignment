@@ -1,0 +1,80 @@
+<!-- eg:1 -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="Title"/>
+        <xs:element type="xs:string" name="Author"/>
+        <xs:element type="xs:string" name="Theme"/>
+        <xs:element type="xs:string" name="Publisher"/>
+        <xs:element type="xs:byte" name="IBSN"/>
+        <xs:element type="xs:string" name="Price"/>
+        <xs:element type="xs:string" name="Edition"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+<!-- eg:2 -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="mail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="to"/>
+        <xs:element type="xs:string" name="from"/>
+        <xs:element type="xs:string" name="header"/>
+        <xs:element type="xs:string" name="body"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+<!-- eg:3 -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="Title"/>
+        <xs:element name="Author" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Name"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Publisher">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Name"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+<!-- eg:4 -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Books">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element type="xs:string" name="Author"/>
+        <xs:element type="xs:string" name="Category"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+<!-- eg:5 -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Comics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="Book_name"/>
+        <xs:element type="xs:short" name="TotalNoOfPages"/>
+        <xs:element type="xs:string" name="Author_name"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

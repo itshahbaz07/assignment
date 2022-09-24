@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- eg:1 -->
+<Book>
+    <Title>Path To Paradise</Title>
+    <Author>David White</Author>
+    <Theme>Philosophy</Theme>
+    <Publisher>ABC Publisher</Publisher>
+    <IBSN>11</IBSN>
+    <Price>$12481</Price>
+    <Edition>June 2000</Edition>
+</Book>
+
+<!-- eg:2 -->
+<mail>
+    <to>John</to>
+    <from>Wick</from>
+    <header>Scheduler</header>
+    <body>3rd March Monday, 7:30 PM:board meeting !</body>
+</mail>
+
+<!-- eg:3 -->
+<Book>
+    <Title>A cup of tea</Title>
+    <Author>
+        <Name>Dennis Compton</Name>
+    </Author>
+    <Author>
+        <Name>George Ford</Name>
+    </Author>
+    <Publisher>
+        <Name>Orange</Name>
+    </Publisher>
+</Book>
+
+<!-- eg:4 -->
+<Books>
+    Apocalypse written by<Author>Mary Jane</Author>
+    is of Genre<Category>Fiction</Category>.
+</Books>
+
+<!-- eg:5 -->
+<Comics>
+    <Book_name>The Da vinci code</Book_name>
+    <TotalNoOfPages>360</TotalNoOfPages>
+    <Author_name>Dan Brown</Author_name>
+</Comics>
